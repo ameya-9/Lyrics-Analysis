@@ -4,6 +4,8 @@ This was originally created in December 2021 by Ameya Naik MIMS '23 as a final p
 
 # Introduction 
 Petrusich's piece [“Genre is Disappearing, What Comes Next?”](https://www.newyorker.com/magazine/2021/03/15/genre-is-disappearing-what-comes-next) on musical genres made me wonder: how do artists use the same words differently? When classroom(![Info202](https://www.ischool.berkeley.edu/courses/info/202)UC Berkeley very interesting course do check it out!) discussion of the topic of document level embedding and document-vectors made me wonder, “how can document-level embedding help distinguish differences between artists?”.For my final project, I combined these concepts in an implementation project. Specifically, I investigated how effectively document-level embedding tells us which artists' song lyrics are similar, and whether this approach aligns or contradicts to methods of genre categorization.
+![Screen_Recording_2021-12-17_at_12_38_32_PM_AdobeCreativeCloudExpress (1)](https://user-images.githubusercontent.com/19268537/146633657-646b2362-34c6-499f-ab9b-fd7594e871ed.gif)
+
 
 # Project Concepts
 These were the concepts covered in this project(I enjoyed learning further)
@@ -14,9 +16,14 @@ I learnt the concepts of web crawling how it gather all the available informatio
 
 ## 3. Bag of Words: 
 In this model the song lyrics document is divided in to words with respective frequencies (frequently used words) then to viusalise it we plotted bar graphs and word clouds for each of the artist.
+
 ## 4. Word Embedding & Document Embedding (it's implementation) :
-The concept of word embedding and document embedding is based on conversion to vectors form.
+The concept of word embedding and document embedding is based on conversion to vectors form, aslo taking into account the contextual orientation.
+_"You Are the Average of the Company You Keep"_
+The concept of doc2vec is context window, which slide through the paragraphs and captures the meaning of the words while continuing shift.
+
 ## 5. Model Visualisation:
+It really difficult to visualised any vector with some many dimension so we need to visualise it in human underderstandable visualisations. There are many ways to do that like PCA, t-sne, UMap etc. However to ensure it's interactive, I searched about tensorboard and converted my model into an understandable .tsv file. 
 
 # Implmentation
 # Instructions to Run the project
